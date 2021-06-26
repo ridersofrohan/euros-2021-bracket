@@ -1,38 +1,82 @@
 .App {
   text-align: center;
+  font-family: "Monaco", "Courier New", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  padding-left: 16px;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bracket-outer-container {
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px dashed black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bracket-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  margin-top: 16px;
+}
+
+.eight-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.four-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.two-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.final-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.team {
+  width: 75%;
+  border: 1px solid black;
+}
+
+.winner {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.correct {
+  background-color: green;
+}
+
+.wrong {
+  background-color: red;
+}
+
+.stage-1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
