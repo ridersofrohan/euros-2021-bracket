@@ -437,7 +437,7 @@ function App() {
         <h2>Leaderboard</h2>
         {leaderDivs}
       </div>
-      <h2>BRACKETS</h2>
+      <h2>Brackets</h2>
       {brackets}
     </div>
   );
