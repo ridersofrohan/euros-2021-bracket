@@ -225,7 +225,7 @@ function App() {
       bracket: [
         [
           ["BEL", "ITA", "FRA", "ESP"],
-          ["SWE", "ENG", "NED", "DEN"],
+          ["SWE", "ENG", "NED", "WAL"],
         ],
         [
           ["BEL", "FRA"],
