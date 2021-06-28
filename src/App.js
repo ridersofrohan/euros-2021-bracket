@@ -41,14 +41,16 @@ function App() {
   let teamsStillIn = {};
   for (let i = 0; i < matches.length; i++) {
     for (let j = 0; j < matches[i].length; j++) {
-      for (let k = 0; i < matches[i][j].length; i++) {
-        if (!matches[i][j][k].w) {
+      for (let k = 0; k < matches[i][j].length; k++) {
+        if (matches[i][j][k].w) {
+          if (matches[i][j][k].w === matches[i][j][k].h) {
+            teamsStillIn[matches[i][j][k].a] = false;
+          } else if (matches[i][j][k].w === matches[i][j][k].a) {
+            teamsStillIn[matches[i][j][k].h] = false;
+          }
+        } else {
           teamsStillIn[matches[i][j][k].h] = true;
           teamsStillIn[matches[i][j][k].a] = true;
-        } else if (matches[i][j][k].w === matches[i][j][k].h) {
-          teamsStillIn[matches[i][j][k].a] = false;
-        } else if (matches[i][j][k].w === matches[i][j][k].a) {
-          teamsStillIn[matches[i][j][k].h] = false;
         }
       }
     }
