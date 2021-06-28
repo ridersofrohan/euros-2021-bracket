@@ -46,26 +46,6 @@ function App() {
   const multiples = [1,2,4,8];
   const picks = [
     {
-      name: "Max Andriot",
-      bracket: [
-        [
-          ["BEL", "ITA", "FRA", "CRO"],
-          ["UKR", "GER", "NED", "DEN"],
-        ],
-        [
-          ["BEL", "FRA"],
-          ["GER", "NED"],
-        ],
-        [
-          ["FRA"],
-          ["NED"],
-        ],
-        [
-          ["FRA"],
-        ],
-      ],
-    },
-    {
       name: "Cameron McClellan",
       bracket: [
         [
@@ -182,6 +162,26 @@ function App() {
         ],
         [
           ["ITA"],
+        ],
+      ],
+    },
+    {
+      name: "Max Andriot",
+      bracket: [
+        [
+          ["BEL", "ITA", "FRA", "CRO"],
+          ["UKR", "GER", "NED", "DEN"],
+        ],
+        [
+          ["BEL", "FRA"],
+          ["GER", "NED"],
+        ],
+        [
+          ["FRA"],
+          ["NED"],
+        ],
+        [
+          ["FRA"],
         ],
       ],
     },
