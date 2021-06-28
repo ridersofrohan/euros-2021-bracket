@@ -21,18 +21,18 @@ function App() {
   };
 
   const teamsStillIn = {
-    "POR": false, "AUT": false, "NED": false, "WAL": false, "CRO": false,
-    "FRA": true, "SUI": true, "SWE": true, "UKR": true, "ENG": true, "GER": true,
-    "BEL": true, "ITA": true, "ESP": true,
+    "POR": false, "AUT": false, "NED": false, "WAL": false,
+    "FRA": true, "SUI": true, "CRO": true, "ESP": true, "SWE": true, "UKR": true, "ENG": true, "GER": true,
+    "BEL": true, "ITA": true,  "CZE": true, "DEN": true,
   };
 
   const matches = [
     [
-      [{h: "BEL", a: "POR", w: "BEL"}, {h: "ITA", a: "AUT", w: "ITA"}, {h: "FRA", a: "SUI", w: ""}, {h: "CRO", a: "ESP", w: "ESP"}],
+      [{h: "BEL", a: "POR", w: "BEL"}, {h: "ITA", a: "AUT", w: "ITA"}, {h: "FRA", a: "SUI", w: ""}, {h: "CRO", a: "ESP", w: ""}],
       [{h: "SWE", a: "UKR", w: ""}, {h: "ENG", a: "GER", w: ""}, {h: "NED", a: "CZE", w: "CZE"}, {h: "WAL", a: "DEN", w: "DEN"}],
     ],
     [
-      [{h: "BEL", a: "ITA", w: ""}, {h: "", a: "ESP", w: ""}],
+      [{h: "BEL", a: "ITA", w: ""}, {h: "", a: "", w: ""}],
       [{h: "", a: "", w: ""}, {h: "CZE", a: "DEN", w: ""}],
     ],
     [
@@ -366,6 +366,7 @@ function App() {
             }
             awayPick = pick.bracket[i-1][j+1][k];
             if (matches[i][j][k].a !== "") {
+              console.log(awayPick);
               awayClass = matches[i][j][k].a === awayPick ? "correct" : "wrong";
             } else {
               awayClass = teamsStillIn[awayPick] ? "" : "wrong";
