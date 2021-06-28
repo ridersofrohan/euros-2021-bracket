@@ -20,12 +20,6 @@ function App() {
     "DEN": "🇩🇰",
   };
 
-  const teamsStillIn = {
-    "POR": false, "AUT": false, "NED": false, "WAL": false,
-    "FRA": true, "SUI": true, "CRO": true, "ESP": true, "SWE": true, "UKR": true, "ENG": true, "GER": true,
-    "BEL": true, "ITA": true,  "CZE": true, "DEN": true,
-  };
-
   const matches = [
     [
       [{h: "BEL", a: "POR", w: "BEL"}, {h: "ITA", a: "AUT", w: "ITA"}, {h: "FRA", a: "SUI", w: ""}, {h: "CRO", a: "ESP", w: ""}],
@@ -44,6 +38,22 @@ function App() {
     ],
   ];
   const multiples = [1,2,4,8];
+  let teamsStillIn = {};
+  for (let i = 0; i < matches.length; i++) {
+    for (let j = 0; j < matches[i].length; j++) {
+      for (let k = 0; i < matches[i][j].length; i++) {
+        if (!matches[i][j][k].w) {
+          teamsStillIn[matches[i][j][k].h] = true;
+          teamsStillIn[matches[i][j][k].a] = true;
+        } else if (matches[i][j][k].w === matches[i][j][k].h) {
+          teamsStillIn[matches[i][j][k].a] = false;
+        } else if (matches[i][j][k].w === matches[i][j][k].a) {
+          teamsStillIn[matches[i][j][k].h] = false;
+        }
+      }
+    }
+  }
+
   const picks = [
     {
       name: "Cameron McClellan",
