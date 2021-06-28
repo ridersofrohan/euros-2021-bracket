@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -21,13 +20,19 @@ function App() {
     "DEN": "🇩🇰",
   };
 
+  const teamsStillIn = {
+    "POR": false, "AUT": false, "NED": false, "WAL": false, "CRO": false,
+    "FRA": true, "SUI": true, "SWE": true, "UKR": true, "ENG": true, "GER": true,
+    "BEL": true, "ITA": true, "ESP": true,
+  };
+
   const matches = [
     [
-      [{h: "BEL", a: "POR", w: "BEL"}, {h: "ITA", a: "AUT", w: "ITA"}, {h: "FRA", a: "SUI", w: ""}, {h: "CRO", a: "ESP", w: ""}],
+      [{h: "BEL", a: "POR", w: "BEL"}, {h: "ITA", a: "AUT", w: "ITA"}, {h: "FRA", a: "SUI", w: ""}, {h: "CRO", a: "ESP", w: "ESP"}],
       [{h: "SWE", a: "UKR", w: ""}, {h: "ENG", a: "GER", w: ""}, {h: "NED", a: "CZE", w: "CZE"}, {h: "WAL", a: "DEN", w: "DEN"}],
     ],
     [
-      [{h: "BEL", a: "ITA", w: ""}, {h: "", a: "", w: ""}],
+      [{h: "BEL", a: "ITA", w: ""}, {h: "", a: "ESP", w: ""}],
       [{h: "", a: "", w: ""}, {h: "CZE", a: "DEN", w: ""}],
     ],
     [
@@ -61,26 +66,6 @@ function App() {
       ],
     },
     {
-      name: "Rohan Challa",
-      bracket: [
-        [
-          ["BEL", "ITA", "FRA", "ESP"],
-          ["SWE", "GER", "CZE", "WAL"],
-        ],
-        [
-          ["BEL", "FRA"],
-          ["GER", "CZE"],
-        ],
-        [
-          ["BEL"],
-          ["GER"],
-        ],
-        [
-          ["BEL"],
-        ],
-      ],
-    },
-    {
       name: "Cameron McClellan",
       bracket: [
         [
@@ -101,7 +86,7 @@ function App() {
       ],
     },
     {
-      name: "Matt Epstein",
+      name: "Clement Asante",
       bracket: [
         [
           ["BEL", "ITA", "FRA", "ESP"],
@@ -112,8 +97,28 @@ function App() {
           ["ENG", "NED"],
         ],
         [
-          ["ITA"],
+          ["FRA"],
           ["ENG"],
+        ],
+        [
+          ["ENG"],
+        ],
+      ],
+    },
+    {
+      name: "Daniel Lemus",
+      bracket: [
+        [
+          ["BEL", "ITA", "FRA", "CRO"],
+          ["UKR", "GER", "NED", "WAL"],
+        ],
+        [
+          ["ITA", "FRA"],
+          ["GER", "NED"],
+        ],
+        [
+          ["ITA"],
+          ["GER"],
         ],
         [
           ["ITA"],
@@ -141,6 +146,66 @@ function App() {
       ],
     },
     {
+      name: "James Blood",
+      bracket: [
+        [
+          ["BEL", "ITA", "FRA", "ESP"],
+          ["SWE", "ENG", "NED", "DEN"],
+        ],
+        [
+          ["BEL", "FRA"],
+          ["ENG", "NED"],
+        ],
+        [
+          ["BEL"],
+          ["ENG"],
+        ],
+        [
+          ["BEL"],
+        ],
+      ],
+    },
+    {
+      name: "Matt Epstein",
+      bracket: [
+        [
+          ["BEL", "ITA", "FRA", "ESP"],
+          ["SWE", "ENG", "NED", "DEN"],
+        ],
+        [
+          ["ITA", "FRA"],
+          ["ENG", "NED"],
+        ],
+        [
+          ["ITA"],
+          ["ENG"],
+        ],
+        [
+          ["ITA"],
+        ],
+      ],
+    },
+    {
+      name: "Max Mealor",
+      bracket: [
+        [
+          ["BEL", "ITA", "FRA", "ESP"],
+          ["SWE", "ENG", "NED", "DEN"],
+        ],
+        [
+          ["BEL", "FRA"],
+          ["ENG", "NED"],
+        ],
+        [
+          ["FRA"],
+          ["ENG"],
+        ],
+        [
+          ["FRA"],
+        ],
+      ],
+    },
+    {
       name: "Mitchell Fratrik",
       bracket: [
         [
@@ -161,19 +226,19 @@ function App() {
       ],
     },
     {
-      name: "Sajan Patel",
+      name: "Niall Costigan",
       bracket: [
         [
           ["BEL", "ITA", "FRA", "ESP"],
-          ["SWE", "GER", "NED", "DEN"],
+          ["SWE", "ENG", "NED", "WAL"],
         ],
         [
           ["BEL", "FRA"],
-          ["GER", "DEN"],
+          ["SWE", "NED"],
         ],
         [
           ["BEL"],
-          ["GER"],
+          ["NED"],
         ],
         [
           ["BEL"],
@@ -181,18 +246,18 @@ function App() {
       ],
     },
     {
-      name: "Clement Asante",
+      name: "Olivia Mealor",
       bracket: [
         [
           ["BEL", "ITA", "FRA", "ESP"],
           ["SWE", "ENG", "NED", "DEN"],
         ],
         [
-          ["ITA", "FRA"],
+          ["BEL", "FRA"],
           ["ENG", "NED"],
         ],
         [
-          ["FRA"],
+          ["BEL"],
           ["ENG"],
         ],
         [
@@ -221,102 +286,42 @@ function App() {
       ],
     },
     {
-      name: "Niall Costigan",
+      name: "Rohan Challa",
       bracket: [
         [
           ["BEL", "ITA", "FRA", "ESP"],
-          ["SWE", "ENG", "NED", "WAL"],
+          ["SWE", "GER", "CZE", "WAL"],
         ],
         [
           ["BEL", "FRA"],
-          ["SWE", "NED"],
+          ["GER", "CZE"],
         ],
         [
           ["BEL"],
-          ["NED"],
-        ],
-        [
-          ["BEL"],
-        ],
-      ],
-    },
-    {
-      name: "Daniel Lemus",
-      bracket: [
-        [
-          ["BEL", "ITA", "FRA", "CRO"],
-          ["UKR", "GER", "NED", "WAL"],
-        ],
-        [
-          ["ITA", "FRA"],
-          ["GER", "NED"],
-        ],
-        [
-          ["ITA"],
           ["GER"],
         ],
         [
-          ["ITA"],
-        ],
-      ],
-    },
-    {
-      name: "Olivia Mealor",
-      bracket: [
-        [
-          ["BEL", "ITA", "FRA", "ESP"],
-          ["SWE", "ENG", "NED", "DEN"],
-        ],
-        [
-          ["BEL", "FRA"],
-          ["ENG", "NED"],
-        ],
-        [
-          ["BEL"],
-          ["ENG"],
-        ],
-        [
-          ["ENG"],
-        ],
-      ],
-    },
-    {
-      name: "James Blood",
-      bracket: [
-        [
-          ["BEL", "ITA", "FRA", "ESP"],
-          ["SWE", "ENG", "NED", "DEN"],
-        ],
-        [
-          ["BEL", "FRA"],
-          ["ENG", "NED"],
-        ],
-        [
-          ["BEL"],
-          ["ENG"],
-        ],
-        [
           ["BEL"],
         ],
       ],
     },
     {
-      name: "Max Mealor",
+      name: "Sajan Patel",
       bracket: [
         [
           ["BEL", "ITA", "FRA", "ESP"],
-          ["SWE", "ENG", "NED", "DEN"],
+          ["SWE", "GER", "NED", "DEN"],
         ],
         [
           ["BEL", "FRA"],
-          ["ENG", "NED"],
+          ["GER", "DEN"],
         ],
         [
-          ["FRA"],
-          ["ENG"],
+          ["BEL"],
+          ["GER"],
         ],
         [
-          ["FRA"],
+          ["BEL"],
         ],
       ],
     },
@@ -326,6 +331,7 @@ function App() {
   let scores = [];
   for (const pick of picks) {
     let score = 0;
+    let maxScore = 0;
     let matchDivs = [];
     for (var i = 0; i < matches.length; i++) {
       let stages = [];
@@ -337,24 +343,32 @@ function App() {
           let awayPick = matches[i][j][k].a;
           let awayClass = "";
 
-          if (i === 1 || i == 2) {
+          if (i === 1 || i === 2) {
             homePick = pick.bracket[i-1][j][Math.floor(k*2)];
             if (matches[i][j][k].h !== "") {
               homeClass = matches[i][j][k].h === homePick ? "correct" : "wrong";
+            } else {
+              homeClass = teamsStillIn[homePick] ? "" : "wrong";
             }
             awayPick = pick.bracket[i-1][j][Math.floor(k*2)+1];
             if (matches[i][j][k].a !== "") {
               awayClass = matches[i][j][k].a === awayPick ? "correct" : "wrong";
+            } else {
+              awayClass = teamsStillIn[awayPick] ? "" : "wrong";
             }
           }
           if (i === 3) {
             homePick = pick.bracket[i-1][j][k];
             if (matches[i][j][k].h !== "") {
               homeClass = matches[i][j][k].h === homePick ? "correct" : "wrong";
+            } else {
+              homeClass = teamsStillIn[homePick] ? "" : "wrong";
             }
             awayPick = pick.bracket[i-1][j+1][k];
             if (matches[i][j][k].a !== "") {
               awayClass = matches[i][j][k].a === awayPick ? "correct" : "wrong";
+            } else {
+              awayClass = teamsStillIn[awayPick] ? "" : "wrong";
             }
           }
 
@@ -371,16 +385,21 @@ function App() {
 
           if (matches[i][j][k].w === pick.bracket[i][j][k]) {
             score += multiples[i];
+            maxScore += multiples[i];
+          }
+          if (!matches[i][j][k].w && teamsStillIn[pick.bracket[i][j][k]]) {
+            maxScore += multiples[i];
           }
         }
         stages.push(sides);
       }
       matchDivs.push(stages);
     }
-    scores.push({name: pick.name, score: score});
+    const finalPickClass = "winner " + (teamsStillIn[pick.bracket[3][0][0]] ? "" : "wrong");
+    scores.push({name: pick.name, score: score, maxScore: maxScore});
     brackets.push(
-      <div className="bracket-outer-container">
-        <h3>{pick.name}</h3>
+      <div className="bracket-outer-container" key={pick.name}>
+        <h3>{pick.name}: {score} ({maxScore})</h3>
         <div className="bracket-container">
           <div className="eight-container">
             {matchDivs[0][0]}
@@ -392,7 +411,9 @@ function App() {
             {matchDivs[2][0]}
           </div>
           <div className="final-container">
-            <span className="winner">{pick.bracket[3][0][0]} {emojis[pick.bracket[3][0][0]]}</span>
+            <span className={finalPickClass}>
+              {pick.bracket[3][0][0]} {emojis[pick.bracket[3][0][0]]}
+            </span>
             {matchDivs[3][0]}
           </div>
           <div className="two-container">
@@ -419,9 +440,8 @@ function App() {
 
   const leaderDivs = scores.map(leader => {
     return (
-      <div>
-        <span>{leader.name}</span>:
-        <span>{leader.score}</span>
+      <div key={leader.name}>
+        <span>{leader.name}: {leader.score}</span>
       </div>
     );
   });
@@ -430,7 +450,7 @@ function App() {
     <div className="App">
       <div>
         <h1> Euros 2021 Pool </h1>
-        <p>Sponsored by Max Andriot</p>
+        <span>Sponsored by Max Andriot</span>
       </div>
 
       <div>
