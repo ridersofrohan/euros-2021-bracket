@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/euros-2021-bracket/static/css/main.9c8a5975.chunk.css",
-    "main.js": "/euros-2021-bracket/static/js/main.19640834.chunk.js",
-    "main.js.map": "/euros-2021-bracket/static/js/main.19640834.chunk.js.map",
+    "main.css": "/euros-2021-bracket/static/css/main.2213c184.chunk.css",
+    "main.js": "/euros-2021-bracket/static/js/main.3439b60f.chunk.js",
+    "main.js.map": "/euros-2021-bracket/static/js/main.3439b60f.chunk.js.map",
     "runtime-main.js": "/euros-2021-bracket/static/js/runtime-main.7e1b3340.js",
     "runtime-main.js.map": "/euros-2021-bracket/static/js/runtime-main.7e1b3340.js.map",
     "static/js/2.9617a075.chunk.js": "/euros-2021-bracket/static/js/2.9617a075.chunk.js",
@@ -10,14 +10,13 @@
     "static/js/3.7fc828c6.chunk.js": "/euros-2021-bracket/static/js/3.7fc828c6.chunk.js",
     "static/js/3.7fc828c6.chunk.js.map": "/euros-2021-bracket/static/js/3.7fc828c6.chunk.js.map",
     "index.html": "/euros-2021-bracket/index.html",
-    "static/css/main.9c8a5975.chunk.css.map": "/euros-2021-bracket/static/css/main.9c8a5975.chunk.css.map",
-    "static/js/2.9617a075.chunk.js.LICENSE.txt": "/euros-2021-bracket/static/js/2.9617a075.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/euros-2021-bracket/static/media/logo.6ce24c58.svg"
+    "static/css/main.2213c184.chunk.css.map": "/euros-2021-bracket/static/css/main.2213c184.chunk.css.map",
+    "static/js/2.9617a075.chunk.js.LICENSE.txt": "/euros-2021-bracket/static/js/2.9617a075.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7e1b3340.js",
     "static/js/2.9617a075.chunk.js",
-    "static/css/main.9c8a5975.chunk.css",
-    "static/js/main.19640834.chunk.js"
+    "static/css/main.2213c184.chunk.css",
+    "static/js/main.3439b60f.chunk.js"
   ]
 }
