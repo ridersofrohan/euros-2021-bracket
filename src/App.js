@@ -23,11 +23,11 @@ function App() {
   const matches = [
     [
       [{h: "BEL", a: "POR", w: "BEL"}, {h: "ITA", a: "AUT", w: "ITA"}, {h: "FRA", a: "SUI", w: "SUI"}, {h: "CRO", a: "ESP", w: "ESP"}],
-      [{h: "SWE", a: "UKR", w: ""}, {h: "ENG", a: "GER", w: "ENG"}, {h: "NED", a: "CZE", w: "CZE"}, {h: "WAL", a: "DEN", w: "DEN"}],
+      [{h: "SWE", a: "UKR", w: "UKR"}, {h: "ENG", a: "GER", w: "ENG"}, {h: "NED", a: "CZE", w: "CZE"}, {h: "WAL", a: "DEN", w: "DEN"}],
     ],
     [
       [{h: "BEL", a: "ITA", w: ""}, {h: "SUI", a: "ESP", w: ""}],
-      [{h: "", a: "ENG", w: ""}, {h: "CZE", a: "DEN", w: ""}],
+      [{h: "UKR", a: "ENG", w: ""}, {h: "CZE", a: "DEN", w: ""}],
     ],
     [
       [{h: "", a: "", w: ""}],
