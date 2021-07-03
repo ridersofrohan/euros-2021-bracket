@@ -26,11 +26,11 @@ function App() {
       [{h: "SWE", a: "UKR", w: "UKR"}, {h: "ENG", a: "GER", w: "ENG"}, {h: "NED", a: "CZE", w: "CZE"}, {h: "WAL", a: "DEN", w: "DEN"}],
     ],
     [
-      [{h: "BEL", a: "ITA", w: ""}, {h: "SUI", a: "ESP", w: ""}],
+      [{h: "BEL", a: "ITA", w: "ITA"}, {h: "SUI", a: "ESP", w: "ESP"}],
       [{h: "UKR", a: "ENG", w: ""}, {h: "CZE", a: "DEN", w: ""}],
     ],
     [
-      [{h: "", a: "", w: ""}],
+      [{h: "ITA", a: "ESP", w: ""}],
       [{h: "", a: "", w: ""}],
     ],
     [
