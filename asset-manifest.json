@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/euros-2021-bracket/static/css/main.2213c184.chunk.css",
-    "main.js": "/euros-2021-bracket/static/js/main.bbfe242e.chunk.js",
-    "main.js.map": "/euros-2021-bracket/static/js/main.bbfe242e.chunk.js.map",
+    "main.js": "/euros-2021-bracket/static/js/main.26e80ec3.chunk.js",
+    "main.js.map": "/euros-2021-bracket/static/js/main.26e80ec3.chunk.js.map",
     "runtime-main.js": "/euros-2021-bracket/static/js/runtime-main.7e1b3340.js",
     "runtime-main.js.map": "/euros-2021-bracket/static/js/runtime-main.7e1b3340.js.map",
     "static/js/2.9617a075.chunk.js": "/euros-2021-bracket/static/js/2.9617a075.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7e1b3340.js",
     "static/js/2.9617a075.chunk.js",
     "static/css/main.2213c184.chunk.css",
-    "static/js/main.bbfe242e.chunk.js"
+    "static/js/main.26e80ec3.chunk.js"
   ]
 }
