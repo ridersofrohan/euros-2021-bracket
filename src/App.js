@@ -31,10 +31,10 @@ function App() {
     ],
     [
       [{h: "ITA", a: "ESP", w: "ITA"}],
-      [{h: "ENG", a: "DEN", w: ""}],
+      [{h: "ENG", a: "DEN", w: "ENG"}],
     ],
     [
-      [{h: "ITA", a: "", w: ""}],
+      [{h: "ITA", a: "ENG", w: ""}],
     ],
   ];
   const multiples = [1,2,4,8];
