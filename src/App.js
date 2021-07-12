@@ -34,7 +34,7 @@ function App() {
       [{h: "ENG", a: "DEN", w: "ENG"}],
     ],
     [
-      [{h: "ITA", a: "ENG", w: ""}],
+      [{h: "ITA", a: "ENG", w: "ITA"}],
     ],
   ];
   const multiples = [1,2,4,8];
@@ -54,6 +54,9 @@ function App() {
         }
       }
     }
+  }
+  if (matches[3][0][0].w) {
+    teamsStillIn[matches[3][0][0].w] = true;
   }
 
   const picks = [
@@ -408,7 +411,8 @@ function App() {
       }
       matchDivs.push(stages);
     }
-    const finalPickClass = "winner " + (teamsStillIn[pick.bracket[3][0][0]] ? "" : "wrong");
+    const finalPickClass = "winner " + (teamsStillIn[pick.bracket[3][0][0]] ? "correct" : "wrong");
+    console.log(finalPickClass);
     scores.push({name: pick.name, score: score, maxScore: maxScore});
     brackets.push(
       <div className="bracket-outer-container" key={pick.name}>
